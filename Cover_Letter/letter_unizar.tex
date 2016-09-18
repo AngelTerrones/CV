@@ -1,0 +1,40 @@
+\documentclass[10pt]{letter}
+\usepackage{fullpage}                           % Gives 1-in margins
+\usepackage[left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{mathtools,amssymb,amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+%\usepackage[shortlabels]{enumitem}
+\usepackage{paralist}
+\usepackage{varioref}
+\usepackage[%
+        colorlinks=true,urlcolor=blue,linkcolor=blue,
+        pdfpagelabels=true,hypertexnames=true,
+        plainpages=false,naturalnames=false,
+        ]{hyperref}
+\labelformat{enumi}{[#1]}
+
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+\newcommand\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+\signature{\vspace{-0.35in}Ángel Jesús Terrones Bermúdez\\}
+\address{MSc.~Ángel Jesús Terrones Bermúdez\\
+        Calle Teodosio Angellino, \\
+        Residencias Barcelona,\\
+        Torre A, piso 11, apto. 113. \\
+        Cúa, Edo. Miranda. Venezuela. \\
+         \hfill {\texttt{+58-239-2126980}/\email{angelterrones@gmail.com}}}
+
+\begin{document}
+\begin{letter}{}
+
+\opening{Comisión Académica del programa de Doctorado:}
+
+
+\closing{Atentamente,}
+
+
+\end{letter}
+\end{document}
