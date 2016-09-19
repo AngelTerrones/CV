@@ -1,2 +1,12 @@
 *.pdf
 *zzz*
+*.log
+*.out
+*.gz
+*.fls
+*.aux
+*.fdb*
+
+
+auto/
+old/
