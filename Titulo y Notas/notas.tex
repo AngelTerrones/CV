@@ -7,41 +7,34 @@
 \usepackage{amssymb}
 \usepackage{pdfpages}
 \usepackage{hyperref}
+\usepackage{pdfpages}
 
 \usepackage{tocloft}
 \renewcommand{\cfttoctitlefont}{\normalfont\Large\bfseries}
 
-\addto{\captionsenglish}{\renewcommand*{\contentsname}{Expediente Académico: 
+\addto{\captionsenglish}{\renewcommand*{\contentsname}{Expediente Académico:
 Ángel Terrones}}
 
 \begin{document}
 \tableofcontents
 
-\newpage
-\phantomsection
-\addcontentsline{toc}{chapter}{Título de Ingeniería}
-\includegraphics[height=\linewidth, angle=90]{img001.jpg}
-
-\newpage
-\phantomsection
-\addcontentsline{toc}{chapter}{Título de Maestría}
-\includegraphics[height=\linewidth, angle=90]{img002.jpg}
+%\newpage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Título de Ingeniería}
+%\includepdf[landscape=true]{TI.pdf}
+%
+%\newpage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Título de Maestría}
+%\includepdf[landscape=true]{TM.pdf}
 
 \newpage
 \phantomsection
 \addcontentsline{toc}{chapter}{Notas Pre-grado}
-\includegraphics[width=\linewidth]{img006.jpg}
-\includegraphics[width=\linewidth]{img007.jpg}
-\includegraphics[width=\linewidth]{img008.jpg}
-\includegraphics[width=\linewidth]{img009.jpg}
-\includegraphics[width=\linewidth]{img010.jpg}
-\includegraphics[width=\linewidth]{img011.jpg}
-\includegraphics[width=\linewidth]{img012.jpg}
+\includepdf[pages=-]{NI.pdf}
 
 \newpage
 \phantomsection
 \addcontentsline{toc}{chapter}{Notas Maestría}
-\includegraphics[width=\linewidth]{img003.jpg}
-\includegraphics[width=\linewidth]{img004.jpg}
-\includegraphics[width=\linewidth]{img005.jpg}
-\end{document} 
+\includepdf[pages=-]{NM.pdf}
+\end{document}
